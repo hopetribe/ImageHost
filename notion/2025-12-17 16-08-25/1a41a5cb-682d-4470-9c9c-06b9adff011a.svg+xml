@@ -1,0 +1,83 @@
+
+<svg viewBox="0 0 800 620" xmlns="http://www.w3.org/2000/svg" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="800" height="620" fill="#1a1a2e"/>
+  
+  <!-- 用户层 -->
+  <rect x="50" y="15" width="700" height="50" rx="8" fill="#4a4e69"/>
+  <text x="400" y="38" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">用户层</text>
+  <text x="400" y="55" text-anchor="middle" fill="#e0e0e0" font-size="12">(按下AI按键/语音唤醒)</text>
+  
+  <!-- 箭头1 -->
+  <polygon points="400,75 394,65 406,65" fill="#888"/>
+  
+  <!-- 豆包主应用 -->
+  <rect x="50" y="85" width="700" height="95" rx="8" fill="#e63946"/>
+  <text x="400" y="108" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">豆包主应用</text>
+  <text x="400" y="125" text-anchor="middle" fill="#ffe0e0" font-size="12">(用户交互入口)</text>
+  <rect x="70" y="135" width="660" height="38" rx="5" fill="rgba(0,0,0,0.25)" />
+  <text x="400" y="152" text-anchor="middle" fill="#ffffff" font-size="11">语音交互服务 - 处理语音输入 | 对话界面 - 展示对话内容</text>
+  <text x="400" y="167" text-anchor="middle" fill="#ffe0e0" font-size="11">负责：用户界面、意图理解、任务分发</text>
+  
+  <!-- 箭头2 -->
+  <polygon points="400,190 394,180 406,180" fill="#888"/>
+  <text x="440" y="192" fill="#aaa" font-size="11">IPC调用</text>
+  
+  <!-- AI助手代理 -->
+  <rect x="50" y="200" width="700" height="100" rx="8" fill="#1d3557"/>
+  <text x="400" y="223" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">AI助手代理</text>
+  <text x="400" y="240" text-anchor="middle" fill="#a8dadc" font-size="12">(核心执行引擎)</text>
+  <rect x="70" y="250" width="660" height="42" rx="5" fill="rgba(0,0,0,0.25)" />
+  <text x="400" y="268" text-anchor="middle" fill="#ffffff" font-size="11">语音唤醒服务 - 持续监听"豆包豆包" | 能力调度服务 - 分发各类操作请求</text>
+  <text x="400" y="285" text-anchor="middle" fill="#a8dadc" font-size="11">截图服务 - 捕获屏幕内容 | 声纹采集 - 识别用户身份</text>
+  
+  <!-- 三个箭头 -->
+  <polygon points="150,310 144,300 156,300" fill="#888"/>
+  <polygon points="400,310 394,300 406,300" fill="#888"/>
+  <polygon points="650,310 644,300 656,300" fill="#888"/>
+  
+  <!-- 三个模块 -->
+  <rect x="50" y="320" width="200" height="115" rx="8" fill="#2a9d8f"/>
+  <text x="150" y="345" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">AI推理引擎</text>
+  <text x="150" y="368" text-anchor="middle" fill="#e0ffff" font-size="11">• OCR文字识别</text>
+  <text x="150" y="386" text-anchor="middle" fill="#e0ffff" font-size="11">• CLIP向量化</text>
+  <text x="150" y="404" text-anchor="middle" fill="#e0ffff" font-size="11">• VLM图片理解</text>
+  <text x="150" y="422" text-anchor="middle" fill="#e0ffff" font-size="11">• NER实体识别</text>
+  
+  <rect x="300" y="320" width="200" height="115" rx="8" fill="#e76f51"/>
+  <text x="400" y="345" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">自动操作执行</text>
+  <text x="400" y="372" text-anchor="middle" fill="#ffe8e0" font-size="11">• 屏幕截图</text>
+  <text x="400" y="394" text-anchor="middle" fill="#ffe8e0" font-size="11">• 事件注入</text>
+  <text x="400" y="416" text-anchor="middle" fill="#ffe8e0" font-size="11">• 任务执行</text>
+  
+  <rect x="550" y="320" width="200" height="115" rx="8" fill="#9b5de5"/>
+  <text x="650" y="345" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">记忆数据</text>
+  <text x="650" y="368" text-anchor="middle" fill="#f0e0ff" font-size="11">• 用户画像存储(100天)</text>
+  <text x="650" y="386" text-anchor="middle" fill="#f0e0ff" font-size="11">• APP使用预测</text>
+  <text x="650" y="404" text-anchor="middle" fill="#f0e0ff" font-size="11">• 联系人/位置/WiFi索引</text>
+  <text x="650" y="422" text-anchor="middle" fill="#f0e0ff" font-size="11">• 行为数据收集</text>
+  
+  <!-- 箭头4 -->
+  <polygon points="400,445 394,435 406,435" fill="#888"/>
+  
+  <!-- Android系统层 -->
+  <rect x="50" y="455" width="700" height="80" rx="8" fill="#457b9d"/>
+  <text x="400" y="478" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="bold">Android系统层</text>
+  <rect x="70" y="488" width="200" height="38" rx="5" fill="rgba(0,0,0,0.3)" />
+  <text x="170" y="505" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">InputManager</text>
+  <text x="170" y="520" text-anchor="middle" fill="#d0e8f0" font-size="10">(输入事件注入)</text>
+  <rect x="300" y="488" width="200" height="38" rx="5" fill="rgba(0,0,0,0.3)" />
+  <text x="400" y="505" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">WindowManager</text>
+  <text x="400" y="520" text-anchor="middle" fill="#d0e8f0" font-size="10">(截图服务)</text>
+  <rect x="530" y="488" width="200" height="38" rx="5" fill="rgba(0,0,0,0.3)" />
+  <text x="630" y="505" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">SoundTrigger</text>
+  <text x="630" y="520" text-anchor="middle" fill="#d0e8f0" font-size="10">(语音唤醒)</text>
+  
+  <!-- 箭头5 -->
+  <polygon points="400,545 394,535 406,535" fill="#888"/>
+  
+  <!-- 目标应用 -->
+  <rect x="50" y="555" width="700" height="50" rx="8" fill="#f4a261"/>
+  <text x="400" y="578" text-anchor="middle" fill="#1a1a2e" font-size="15" font-weight="bold">目标应用</text>
+  <text x="400" y="595" text-anchor="middle" fill="#3d3d3d" font-size="12">(携程/银行APP/任意APP)</text>
+</svg>
